@@ -150,13 +150,13 @@ def Test2():
     
     mid = int(len(listadepecas)/2)
 
-    brancos = listadepecas[0:mid]
-    pretos = listadepecas[mid:100]
+    imgsA = listadepecas[0:mid]
+    imgsB = listadepecas[mid:100]
     for i in range(0,50):
 
-        cv2.imwrite("Segmentados/"+str(a)+str(b)+'.jpg',pretos[i])
+        cv2.imwrite("Segmentados/"+str(a)+str(b)+'.jpg',imgsB[i])
         b = b+1
-        cv2.imwrite("Segmentados/"+str(a)+str(b)+'.jpg',brancos[i])
+        cv2.imwrite("Segmentados/"+str(a)+str(b)+'.jpg',imgsA[i])
         b = b+1
         if b == 10:
             a = a+1
